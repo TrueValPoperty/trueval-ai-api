@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: trueval-api
+    env: python
+    region: frankfurt  # change if needed
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python 'Trueval Ai Pipeline.py'"
+    plan: free
+    autoDeploy: true
